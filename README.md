@@ -27,7 +27,7 @@ Remember that for the Preview 2 version the list of supported deveices was small
 
 ## Authors
 
-[Alessandro Mascherin](https://github.com/AMascherin/)
-Federico Ferrero
-Alessio Botto
-[Maria Giulia Canu](https://github.com/GiMoody/)
+* [Alessandro Mascherin](https://github.com/AMascherin/)
+* Federico Ferrero
+* Alessio Botto
+* [Maria Giulia Canu](https://github.com/GiMoody/)
