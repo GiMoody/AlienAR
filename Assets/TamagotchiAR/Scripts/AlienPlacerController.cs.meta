@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: f1fa5395d9cd15a4fa4b81dcb20a5607
+timeCreated: 1518459472
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_firstPersonCamera: {instanceID: 0}
+  - AlienPrefab: {fileID: 1552144318114592, guid: 781a41b252a25cc4c9284a69418874db,
+      type: 2}
+  - m_trackedPlanePrefab: {instanceID: 0}
+  - m_searchingForPlaneUI: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

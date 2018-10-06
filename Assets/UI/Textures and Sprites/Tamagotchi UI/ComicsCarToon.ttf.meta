@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 40d47e4a6df16204481249eebdd9bc4a
+timeCreated: 1513433620
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: ComicsCarToon
+  fontNames:
+  - ComicsCarToon
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

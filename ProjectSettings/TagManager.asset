@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Alien_Baby
+  - OggettiScena
+  - Bubble
+  - GameManager
+  - Ground
+  - Food
+  - Cibo
+  - BubbleGenerator
+  - MazzoCarte
+  - Drink
+  - Medicine
+  - BubbleSpeach
+  - EffectLight
+  - ParticleSystem
+  - ExitGUI
+  - HelpGUI
+  - BadEndingGUI
+  - EvolutionGUI
+  - GameOverGUI
+  - GoodEndingGUI
+  - LastChoiceGUI
+  - MiniGameGUI
+  - NeutralEndingGUI
+  - Bottoni
+  - HelpButton
+  - DeathGUI
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Alien
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

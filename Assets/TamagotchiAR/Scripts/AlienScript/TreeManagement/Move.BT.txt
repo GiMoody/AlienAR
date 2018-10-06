@@ -1,0 +1,138 @@
+tree("Root")
+    // Nodo root dell'albero
+		sequence
+			not IsFinallyGameEnd
+			mute tree("BuildStage")
+			mute tree("EndGameStage")
+			mute tree("EvolvingStage")
+			mute tree("GameStage")
+			mute tree("IdleStage")
+
+// FASE FINEGIOCO //
+tree("EndGameStage")
+	sequence
+		IsDead
+		FinallyEndGame()
+
+// FASE EVOLUZIONE //
+tree("EvolvingStage")
+	sequence
+		not IsDead
+		IsEvolving
+		AdvisePlayerEvo()
+		WowAlienIsEvolving()
+		Wait(3.0)
+
+// FASE BUILD //
+tree("BuildStage")
+	// Nodo per gestire la fase di build
+	sequence
+		IsBuild()
+		LookObject()
+
+
+// FASE GAME //
+tree("GameStage")
+	// Nodo per gestire il bisogno game dell'alieno
+	sequence
+		not IsDead
+		not IsEvolving
+		GameNeed
+		mute tree("AskNeed")
+		mute tree("StartGame")
+		mute tree("WaitEndGame")
+		
+tree("StartGame")
+	// Nodo che gestisce l'inizio del gioco
+	sequence
+		not GameStarted
+		StartGame()
+
+tree("WaitEndGame")
+	// Aspetto fino a quando il mini gioco non finisce
+	sequence
+		EndGame()
+		SetScores()
+		tree("CalculateNextAction")
+		tree("Emotion")
+		Wait(2.0)
+
+// FASE IDLE //
+tree("IdleStage")
+	// Nodoper gestire la fase di idle 
+	// comprende tutti i bisogni tranne il gioco
+	sequence
+		not GameNeed
+		not IsDead
+		not IsEvolving
+		IsIdle()
+		mute tree("Move")
+		Wait(2.0)
+		mute tree("WaitPlayer")
+		mute tree("CheckBowl")
+		mute tree("CalculateNextAction")
+		mute tree("Emotion")
+		Wait(2.0)
+
+tree("Move")
+	// Ritorna true se uno dei due ritorna true
+	fallback
+		tree("MoveRandom")
+		tree("AskNeed")
+		
+
+tree("MoveRandom")
+	// Azioni svolte se l'alieno non a richieste 
+	//while not need
+		sequence
+			not need
+			Wait(2.0)
+			MoveTo()
+			PrintTo("On no Need")
+
+tree("MoveNext")
+	// L'alieno si muove nella destinazione dell'oggetto 
+	// di cui ha bisogno e fa la sua richiesta
+	sequence
+		MoveTo()
+		AskNeed()
+		PrintTo("On Need")
+
+tree("AskNeed")
+	// Nodi svolti se l'alieno ha dei bisogni 
+	sequence
+		need
+		tree("MoveNext")
+		tree("WaitReachDestination")
+
+tree("WaitReachDestination")
+	// Aspetta di arrivare a destinazione
+	repeat not ReachDestination
+
+tree("CheckBowl")
+	// Controlla se le varie ciotole sono piene o no
+	sequence
+		IsBowlFull
+		Wait(3.0)
+		CleanBowl()
+
+tree("WaitPlayer")
+	// Aspetto fino a quando il giocatore non soddisfa la richeista (DA RIVEDERE PER INPUT) 
+	repeat
+		sequence
+			not IsNeedSatisfied
+			need
+			IsNeedEnd()
+
+// CALCOLO EMOZIONI E PROSSIMA AZIONE //
+tree("Emotion")
+	// Cambio texture a seconda dell'emozione dell'alieno
+	sequence
+		ShowEmotion()
+		PrintTo("On Emotion")
+		
+tree("CalculateNextAction")
+	// Calcolo azione del prossimo giro
+	sequence
+		CalculateAction()
+		PrintTo("On Calculate Next Emotion")

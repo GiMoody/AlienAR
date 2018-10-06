@@ -1,0 +1,23 @@
+Folder structure
+-Google ARCore : contains all the data related to the Google ArCore SDK
+-->Configuration: contains configuration asset for the application
+-->Example: Example Application for the sdk. To delete before release
+-->Prefab: Prefabs used by the SDK
+-->SDK (Do not modify!): Contains all the SDK classes and utilities
+
+-Plugins: Texture and materials from an unused plugin
+
+-Scenes: Scenes used by the application
+-->OldScene: not used in the final project
+
+-TamagotchiAR
+-->Prefab: contains all the prefab for the game
+-->Resources: contains all the FBXs, textures, materials, animations, soundtracks, shaders
+-->Script: contains all the C# scripts used in the game
+
+
+-UI: Plugin used for the main menu UI
+
+-UnityNavMesh: Official scripts from Unity for the realtime navmesh management
+
+Install tips: It's possible that the links between the prefab in the scene are broken when the scene are imported from the collab unity tool.

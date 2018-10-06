@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: ce1246a2801e1424ab9f4d23a2fa5120
+timeCreated: 1515171916
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - BubbleGenerator: {instanceID: 0}
+  - BubblePrefab: {fileID: 1827232760607338, guid: 9d10931476a70d74cb3c1a821b44c9e7,
+      type: 2}
+  - scoreGUI: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
