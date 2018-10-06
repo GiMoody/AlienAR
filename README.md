@@ -28,6 +28,6 @@ Remember that for the Preview 2 version the list of supported deveices was small
 ## Authors
 
 * [Alessandro Mascherin](https://github.com/AMascherin/)
-* Federico Ferrero
-* Alessio Botto
+* [Federico Ferrero](https://github.com/FedericoFerrero)
+* [Alessio Botto](https://github.com/AlessiaB8)
 * [Maria Giulia Canu](https://github.com/GiMoody/)
