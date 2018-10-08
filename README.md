@@ -6,9 +6,9 @@ Project for the Virtual Reality course at Politecnico of Turin. It's a AR life s
 
 The document is only available in italian, you can find it at the following [link](AlienAR_GameDocuments.pdf). 
 
-# Images and video
+# Short video demo 
 
-Coming soon :)!
+[![Watch the video](https://github.com/GiMoody/AlienAR/blob/master/AlienARVideoScreenShot.png)](https://youtu.be/89p3d_9_rs4)
 
 ## Getting Started
 
